@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,800&family=Ubuntu:wght@300&display=swap);
+
+
+.bg{
+    background-color: #4CAF50;
+}
+
+.text{
+    color: #fff;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.ml{
+    font-weight: 200;
+    /* margin-left: 1100px; */
+}
+
+
+.desc{
+    color: black;
+    margin-bottom: 20px;
+}
+.Heading{
+/* font-weight: 200; */
+text-decoration: underline;
+padding: 30px;
+padding-left: 90px;
+font-family: 'Roboto Serif', serif;}
+
+img{
+    height:60%;
+    width:90%;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:#4CAF50;
+    margin-right: 30px;
+}
+
+body{
+    /* font-weight: 900; */
+    /* font-family: "Roboto", sans-serif; */
+
+}
+
+#news{
+    margin: 100px;
+    margin-top: 50px;
+    font-weight: 300;
+    font-family: 'Roboto Serif', serif;
+
+
+}
+
+#news h3{
+    font-weight: 800;
+}
+.custom{
+    margin-left: 100px;
+}
+
+.grid-view {
+    list-style: none;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(1,800px); */
+    
+    gap: 2% 0.2%;
+    padding-block-end: 200px;
+  }
+
+  .list-view{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.2%;
+  }
