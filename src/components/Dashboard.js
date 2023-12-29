@@ -54,7 +54,7 @@ const createSlug = (title) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg" >
-      <a class="navbar-brand text" href="#">Triveous</a>
+      <a class="navbar-brand text" href="#">News App</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
