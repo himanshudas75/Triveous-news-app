@@ -16,7 +16,7 @@ const Dashboard = () => {
   const [isGridView, setIsGridView] = useState(false);
   const [favorites, setFavorites] = useState([])
 
-  const url="https://newsapi.org/v2/top-headlines?country=in&apiKey=fcdf3df48dc5488c86f9e9c0ac8801f6";
+  const url="https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=8577027495dea7b9c2038bff73544e8b";
   useEffect(()=>{
     const fetchNews = async () => {
     try{
@@ -82,8 +82,9 @@ const createSlug = (title) => {
           <p>
             <a  href={`/dashboard/${createSlug(article.title)}`}>
             <h3>{article.title}</h3>
-            <img src={article.urlToImage} alt="Image Not Available"/>
+            <img src={article.image} alt="Image Not Available"/>
             <p className="desc">{article.description}</p>
+
 
             </a>
             <button className="btn btn-dark"onClick={() => addToFavorites(article)}>

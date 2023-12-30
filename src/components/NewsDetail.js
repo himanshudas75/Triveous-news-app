@@ -11,7 +11,7 @@ const NewsDetail = () => {
   useEffect(() => {
     const fetchArticleDetails = async () => {
       try {
-        const url="https://newsapi.org/v2/top-headlines?country=in&apiKey=fcdf3df48dc5488c86f9e9c0ac8801f6";
+        const url="https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=8577027495dea7b9c2038bff73544e8b";
 
         const response = await fetch(url);
         const data = await response.json();
@@ -51,8 +51,10 @@ const NewsDetail = () => {
           <div>
           
             <h2>{article.title}</h2>
-            {article.urlToImage && <img src={article.urlToImage} alt={article.title} />}
+            {article.image && <img src={article.image} alt={article.title} />}
             <p>{article.description}</p>
+            <p>{article.content}</p>
+
 
             <a href={article.url} target="_blank" rel="noopener noreferrer">
               Read More
